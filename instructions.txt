@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<P>
+WELCOME!!! THINK OF AN INNOVATIVE WAY TO GIVE INSTRUCTIONS.
+</P>

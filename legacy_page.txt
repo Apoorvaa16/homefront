@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<p> Fill out the legacy card. Once done press the button.
+<form action="instructions.html">
+<input type="submit" value="Yes, I filled my legacy card">
+</form>
+</center>
+</p>
+

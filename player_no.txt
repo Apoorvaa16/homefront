@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<form action="legacy_page.html">
+  Enter the number of players:<br>
+  <input id="number" type="number" min="1" max="6">
+  <br>
+  
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+</center>
+</body>
+</html>
