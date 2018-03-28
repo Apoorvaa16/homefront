@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>
+<center>
+Home Front
+</center>
+</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</meta>
+</head>
+<body>
+<center>
+<img src="HF.png" alt="HTML5 Icon" width="500" height="700">
+<br>
+<br>
+
+<p>
+          <form action="welcome.html">
+<input type="submit" value="Play">
+</form>
+</p>
+</center>
+</body>
+</html>

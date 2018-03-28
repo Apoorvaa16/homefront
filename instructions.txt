@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href ="back.css">
+<div class="header">
+  <img src="logo.png" alt="logo" />
+</div>
+</head>
 <body>
 <center>
 <P>
 WELCOME!!! THINK OF AN INNOVATIVE WAY TO GIVE INSTRUCTIONS.
+
+<form action="video_page.html">
+<input type="submit" value="click me to hear the audio">
+</form>
+</center>
 </P>
+</html>

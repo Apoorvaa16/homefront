@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Home {background-color: white;}
+#Instructions {background-color: white;}
+#Audio {background-color: white;}
+#Record {background-color: white;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Instructions', this, 'blue')"> How to play?</button>
+<button class="tablink" onclick="openPage('Audio', this, 'blue')">Audio</button>
+<button class="tablink" onclick="openPage('Record', this, 'blue')">Record</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <center>
+<img src="HF.png" alt="HTML5 Icon" width="500" height="600">
+<br>
+<br>
+
+<p>
+<b>Enter the number of players:</b> 
+<form action="legacy_page.html">
+  Enter the number of players:<br>
+  <input id="number" type="number" min="1" max="6" required>
+  <br>
+  
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+</p>       
+<button onclick="myFunction()">Play</button>
+
+</div>
+
+
+
+<div id="Instructions" class="tabcontent">
+  <h3>How to play</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+
+
+function myFunction() {
+    var x = document.getElementById("play");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
