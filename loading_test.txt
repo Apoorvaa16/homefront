@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+  function clicked(){
+    window.location.href = "welcome.html";
+  }
+  </script>
 <h1>
 <center>
 Home Front
@@ -16,9 +21,7 @@ Home Front
 <br>
 
 <p>
-          <form action="welcome.html">
-<input type="submit" value="Play">
-</form>
+  <button type="button" name="button" onclick="clicked()">Play</button>
 </p>
 </center>
 </body>
