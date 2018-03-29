@@ -5,6 +5,9 @@
 <div class="header">
   <img src="logo.png" alt="logo" />
 </div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</meta>
 </head>
 <body>
 <center>
@@ -12,10 +15,8 @@
 <br>
 <form action="instructions.html">
   Enter the number of players:<br>
-  <input id="number" type="number" min="1" max="6" required>
-  <br>
-  <br>
-
+  <input id="number" type="number" style="width: 10em;" min="1" max="6" required>
+  <br><br>
   <input type="submit" value="Submit">
 </form> 
 </center>
