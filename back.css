@@ -12,3 +12,56 @@
   top: 18px;
   left: 10px;
 }
+
+  #my-div {
+        position: fixed; 
+        width: 20%; /* Set your desired with */
+        z-index: 2; /* Make sure its above other items. */
+        
+  left: 50%;
+  top: 50%;
+  margin-top: -15px;   /* = -height / 2   */
+  margin-left: -100px; /* = -width / 2    */
+        /* You will not need the below, its only
+           for styling   purposes.*/
+        padding: 10px;
+    
+        text-align: center;
+display:table-cell;
+vertical-align:middle;
+    }
+
+.button {
+    background-color: blue;
+    color: white;
+  
+  left: 50%;
+  top: 50%;
+  margin-top: -15px;   /* = -height / 2   */
+  margin-left: -100px; /* = -width / 2    */
+  position: fixed;     /* Fixed is better */
+    padding: 25px 25px;
+border:  2px solid black;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+   
+
+
+}
+
+.button:hover {
+    background:black ;
+}
+
+.border {
+    width: 200px;
+    padding: 40px;    
+    border: 15px solid blue;
+left: 50%;
+  top: 50%;
+  margin-top: -15px;   /* = -height / 2   */
+  margin-left: -100px; /* = -width / 2    */
+  position: fixed;     /* Fixed is better */
+vertical-align:middle;
+}

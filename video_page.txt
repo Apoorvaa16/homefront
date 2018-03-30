@@ -8,10 +8,15 @@
 <link rel="stylesheet" href ="video.css">
 <h1>
 <center>
-SCENE I:
+Scene I:
 You speak like an innocent bystander
+<br>
+
+ <button id="playButton">Play</button>
+
 </center>
 </h1>
+
 <meta charset="UTF-8">
     <meta http-equiv="refresh" content="25; url=Scene1_draw_next.html">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,21 +26,37 @@ You speak like an innocent bystander
 
 </head>
 <body>
-<tr>
-<tr>
-<tr>
-<br>
-<br>
-<br>
+<div id="my-div">
 <center>
-<div class="videoContainer">
-<video controls>
-  <source src="test_hologram.mp4" type="video/mp4">
+        <video id="myVideo" width="400" height="400">
+            <source src="half_hologram text with audio.mp4">
+        </video>
+       
+        <script type="text/javascript">
+            var myVideo = document.getElementById('myVideo');
+            var playButton = document.getElementById('playButton');
 
-</video>
+            playButton.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    if (myVideo.requestFullscreen) {
+                        myVideo.requestFullscreen();
+                    }
+                    else if (myVideo.msRequestFullscreen) {
+                        myVideo.msRequestFullscreen();
+                    }
+                    else if (myVideo.mozRequestFullScreen) {
+                        myVideo.mozRequestFullScreen();
+                    }
+                    else if (myVideo.webkitRequestFullScreen) {
+                        myVideo.webkitRequestFullScreen();
+                    }
+                    myVideo.play();
+                }
+                else {
+                    myVideo.pause();
+                }
+            }, false);
+            </script>
 </div>
-
-
 </center>
-</body> 
-</html>
+    </body>

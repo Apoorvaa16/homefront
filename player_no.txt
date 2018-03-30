@@ -13,12 +13,14 @@
 <center>
 <br>
 <br>
+<div id="my-div">
 <form action="instructions.html">
   Enter the number of players:<br>
   <input id="number" type="number" style="width: 10em;" min="1" max="6" required>
   <br><br>
   <input type="submit" value="Submit">
 </form> 
+</div>
 </center>
 </body>
 </html>
