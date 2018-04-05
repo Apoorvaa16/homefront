@@ -84,3 +84,13 @@ vertical-align:middle;
     bottom: 0;
 
 }
+
+progress {
+	color:#fff;
+	font-size:12px;
+	width:172px;
+	height:16px;
+	border:none;
+	margin-right:5px;
+	background:#434343;
+}

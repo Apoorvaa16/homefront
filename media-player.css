@@ -8,34 +8,30 @@ h1 {
 
 #media-player {
 
- 
-	float:left;
-	padding:1em 1em .5em;
-	background-color:#333;
+    padding: 50px 0;
+    border: 3px solid green;
+    text-align: center;
 }
 
 video {
-	 position: fixed;
-  	top: 50%;
-  	left: 50%;
-  /* bring your own prefixes */
-  	transform: translate(-50%, -50%);
 	border:1px solid #2e52a4;
-	
+	width:400px;
+	height:400px;
 	background:#000;
 }
 
 button {
 
+	font-size: 50px;
 	text-indent:-9999px;
 	width:16px;
-	height:16px;
+	height:36px;
 	border:none;
 	cursor:pointer;
 	background:transparent url('buttons.png') no-repeat 0 0;
 }
 
-.pause {background-position: center;  }
+.pause { background-position:-19px 0; }
 .stop { background-position:-38px 0; }
 .volume-plus { background-position:-57px 0; }
 .volume-minus { background-position:-76px 0; }
