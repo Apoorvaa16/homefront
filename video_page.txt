@@ -2,19 +2,21 @@
 <html> 
 <head>
 <link rel="stylesheet" href ="back.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href ="video.css">
 <div class="header">
   <img src="logo.png" alt="logo" />
 </div>
-<link rel="stylesheet" href ="video.css">
-<h1>
-<center>
-Scene I:
-You speak like an innocent bystander
+
+ <div class="w3-padding w3-display-topmiddle">Scene I: You speak like an innocent bystander 
 <br>
-
- <button id="playButton">Play</button>
-
+<br>
+<br>
+<center>
+ <button id="playButton">Play/Pause</button>
 </center>
+</div>
+
 </h1>
 
 <meta charset="UTF-8">
@@ -26,13 +28,17 @@ You speak like an innocent bystander
 
 </head>
 <body>
-<div id="my-div">
-<center>
-        <video id="myVideo" width="400" height="400">
+<div class="w3-container">
+ <div class="w3-padding w3-display-middle w3-large">
+
+        <video id="myVideo" width="600" height="600">
             <source src="half_hologram text with audio.mp4">
         </video>
+       </div>
+</div>
        
-        <script type="text/javascript">
+
+ <script type="text/javascript">
             var myVideo = document.getElementById('myVideo');
             var playButton = document.getElementById('playButton');
 
@@ -57,6 +63,6 @@ You speak like an innocent bystander
                 }
             }, false);
             </script>
-</div>
+
 </center>
     </body>

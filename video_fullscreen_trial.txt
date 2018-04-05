@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTML5 Video</title>
+      
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
-<div id="my-div">
+ <div class="w3-padding w3-display-topmiddle">Scene1:You speak like an innocent bystander </div>
+<div class="w3-padding w3-display-middle w3-xxlarge">
         <video id="myVideo" width="400" height="400">
             <source src="half_hologram text with audio.mp4">
         </video>

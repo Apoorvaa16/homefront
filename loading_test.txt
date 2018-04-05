@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script>
   function clicked(){
     window.location.href = "welcome.html";
   }
   </script>
-<h1>
-<center>
-Home Front
-</center>
-</h1>
+<div class="w3-display-topmiddle w3-xxlarge">Kairos</div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </meta>
 </head>
 <body>
-<center>
-<img src="HF.png" alt="HTML5 Icon" width="300" height="500">
+<div class="w3-padding w3-display-middle w3-xxlarge">
+  <button class="button" onclick="clicked()">Play</button>
 <br>
+</div>
 
-
-<p>
-  <button type="button"  style="height:40px;width:70px" name="button" onclick="clicked()">Play</button>
-</p>
-</center>
 </body>
 </html>

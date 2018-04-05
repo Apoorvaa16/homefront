@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href ="back.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="back.css">
 <div class="header">
+
   <img src="logo.png" alt="logo" />
 </div>
  
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </meta>
-<h2>
-<center>
-Draw a card
-</h2>
-</center>
 </head>
 
 
 <body>
-<center>
+  <div class="w3-padding w3-display-topmiddle">Draw a card</div>
+ <div class="w3-padding w3-display-middle w3-xxlarge">
 <p>
 <img src="question_cards_back1.png" alt="HTML5 Icon" width="250" height="300">
 </p>
-</center>
+</div>
 </body>
 </html>

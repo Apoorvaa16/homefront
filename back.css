@@ -14,22 +14,14 @@
 }
 
   #my-div {
-        position: fixed; 
-        width: 20%; /* Set your desired with */
-        z-index: 2; /* Make sure its above other items. */
-        
-  left: 50%;
-  top: 50%;
-  margin-top: -15px;   /* = -height / 2   */
-  margin-left: -100px; /* = -width / 2    */
-        /* You will not need the below, its only
-           for styling   purposes.*/
-        padding: 10px;
     
-        text-align: center;
-display:table-cell;
-vertical-align:middle;
-    }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
 
 .button {
     background-color: blue;
@@ -41,11 +33,18 @@ vertical-align:middle;
   margin-left: -100px; /* = -width / 2    */
   position: fixed;     /* Fixed is better */
     padding: 25px 25px;
-border:  2px solid black;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
    
+.p{
+display: table-cell;
+      height: 400px;
+      width: 800px;
+      background: red;
+    text-align: center;
+    vertical-align: middle;
+    }
 
 
 }
@@ -64,4 +63,24 @@ left: 50%;
   margin-left: -100px; /* = -width / 2    */
   position: fixed;     /* Fixed is better */
 vertical-align:middle;
+}
+
+.videoContainer 
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+.videoContainer video 
+{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btn-bot{
+    position: absolute;
+    bottom: 0;
+
 }
