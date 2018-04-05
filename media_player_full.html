@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta charset='utf-8' />
+      <title>Sample HTML5 Media Player</title>
+      <link href='media-player.css' rel='stylesheet' />
+      <script src='media_player_full.js'></script>
+   </head>
+   <body>
+      <div id='media-player'>
+         <video id='media-video'>
+            <source src='half_hologram text with audio.mp4' type='video/mp4'>
+         </video>
+
+         <div id='media-controls'>
+<button id='play-pause-button' class='play' title='play'
+onclick='togglePlayPause();'>Play</button>
+<button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button>
+<button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>
+<progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+</div>
+      </div>
+
+
+<div id='media-play-list'>
+<h2>Play list</h2>
+<ul id='play-list'>
+<li>
+<span class='play-item' onclick='loadVideo("parrots.webm", "parrots.
+mp4");'>Parrots</span>
+</li>
+<li>
+<span class='play-item' onclick='loadVideo("paddle-wheel.webm",
+"paddle-wheel.mp4");'>Paddle Steamer Wheel</span>
+</li>
+<li>
+<span class='play-item' onclick='loadVideo("grass.webm", "grass.
+mp4");'>Grass</span>
+</li>
+</ul>
+</div>
+   </body>
+</html>

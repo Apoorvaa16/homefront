@@ -31,7 +31,7 @@
 <div class="w3-container">
  <div class="w3-padding w3-display-middle w3-large">
 
-        <video id="myVideo" width="600" height="600">
+        <video id="myVideo" width="900" height="900">
             <source src="half_hologram text with audio.mp4">
         </video>
        </div>

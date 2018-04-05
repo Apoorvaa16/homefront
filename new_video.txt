@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta charset='utf-8' />
+      <title>Sample HTML5 Media Player</title>
+      <link href='media-player.css' rel='stylesheet' />
+      <script>
+		document.addEventListener("DOMContentLoaded", function() { initialiseMediaPlayer(); }, false);
+		var mediaPlayer;
+	function initialiseMediaPlayer() {
+   	mediaPlayer = document.getElementById('media-video');
+   	mediaPlayer.controls = false;
+	mediaPlayer.addEventListener('timeupdate', updateProgressBar, false);
+}
+
+function togglePlayPause() {
+   var btn = document.getElementById('play-pause-button');
+   if (mediaPlayer.paused || mediaPlayer.ended) {
+      btn.title = 'pause';
+      btn.innerHTML = 'pause';
+      btn.className = 'pause';
+      mediaPlayer.play();
+   }
+   else {
+      btn.title = 'play';
+      btn.innerHTML = 'play';
+      btn.className = 'play';
+      mediaPlayer.pause();
+   }
+}
+ function changeButtonType(btn, value) {
+   btn.title = value;
+   btn.innerHTML = value;
+   btn.className = value;
+}
+function replayMedia() {
+   resetPlayer();
+   mediaPlayer.play();
+}
+function updateProgressBar() {
+   var progressBar = document.getElementById('progress-bar');
+   var percentage = Math.floor((100 / mediaPlayer.duration) *
+   mediaPlayer.currentTime);
+   progressBar.value = percentage;
+   progressBar.innerHTML = percentage + '% played';
+}
+
+   </head>
+   <body>
+      <div id='media-player'>
+         <video id='media-video' controls>
+            <source src='parrots.mp4' type='video/mp4'>
+            <source src='parrots.webm' type='video/webm'>
+         </video>
+         <div id='media-controls'>
+	<button id='play-pause-button' class='play' title='play'
+		onclick='togglePlayPause();'>Play</button>
+	<button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button>
+	<button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>
+	<progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+      </div>
+   </body>
+</html>

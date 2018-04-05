@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  <script>
   function clicked3(){
-    window.location.href = "video_page.html";
+    window.location.href = "media_player_full.html";
   }
   </script>
 <link rel="stylesheet" href ="back.css">
