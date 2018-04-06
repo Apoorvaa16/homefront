@@ -1,46 +1,31 @@
-<!DOCTYPE html> 
-<html> 
-<head>
-<link rel="stylesheet" href ="back.css">
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="45; url=background_with_image.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</meta>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href ="video.css">
-<div class="header">
-  <img src="logo.png" alt="logo" />
-</div>
-
- <div class="w3-padding w3-display-topmiddle">Scene I: You speak like an innocent bystander 
+<link rel="stylesheet" href="back.css">
+    </head>
+    <body>
+ <div class="w3-padding w3-display-topmiddle">Scene1:You speak like an innocent bystander</div>
 <br>
 <br>
 <br>
 <center>
- <button id="playButton">Play/Pause</button>
+   <button id="playButton">Play</button>
 </center>
-</div>
-
-</h1>
-
-<meta charset="UTF-8">
-    <meta http-equiv="refresh" content="25; url=Scene1_draw_next.html">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</meta>
-
-
-
-</head>
-<body>
-<div class="w3-container">
- <div class="w3-padding w3-display-middle w3-large">
-
-        <video id="myVideo" width="900" height="900">
+<div id="my-div">
+        <video id="myVideo" width="400" height="400">
             <source src="half_hologram text with audio.mp4">
         </video>
-       </div>
-</div>
-       
-
- <script type="text/javascript">
+     
+        <script type="text/javascript">
             var myVideo = document.getElementById('myVideo');
             var playButton = document.getElementById('playButton');
+	   
+            
+	
 
             playButton.addEventListener('click', function () {
                 if (myVideo.paused) {
@@ -63,6 +48,6 @@
                 }
             }, false);
             </script>
-
-</center>
+</div>
     </body>
+</html>

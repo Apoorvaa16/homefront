@@ -7,10 +7,27 @@
   background: #555;
 }
 
-/* image style */
-img {
+body { 
+   background-image: url("page 2 to 6_background.png");
+    background-repeat: no-repeat;
+	color: white;
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%; 
+}   
+
+.bg {
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5000;
 }
 
 .header h1 {
@@ -27,6 +44,14 @@ img {
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
+
+#imageWrapper { position: relative; height: 500px; } 
+/* height is for display purposes only */
+
+#bottomImage 
+{ position: fixed; 
+bottom: 0;
+ vertical-align: middle; }
 
 
 .button {

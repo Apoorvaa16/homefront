@@ -1,0 +1,28 @@
+var replay = false;
+
+var id = 1;
+function checkReplay(){
+    console.log("!");
+    if( $(".ytp-time-current").html() == $(".ytp-time-duration").html() && replay ){
+    	$(".ytp-button-replay").trigger("click");
+    }
+};
+
+var p = $(".html5-player-chrome")[0];
+var $btn = $("<div class='ytp-button' id='qcl-replay-btn'><span id='qcl-replay-text' class='yt-uix-button-content'>????</span></div>");
+$btn.insertAfter(p.firstChild);
+var $text = $("#qcl-replay-text");
+
+$btn.click(function(){
+    
+    console.log("click");
+    if(replay){
+    	replay = false;
+        window.clearInterval(id);
+		$text.html("????");
+    }else{
+        replay = true;
+        id = self.setInterval(function(){ checkReplay(); },1000);
+    	$text.html("????");
+    }
+});

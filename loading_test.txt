@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="back.css">
   <script>
+
   function clicked(){
     window.location.href = "welcome.html";
   }
   </script>
-<div class="w3-display-topmiddle w3-xxlarge">Kairos</div>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</meta>
+
+<div class="w3-display-topmiddle w3-large">
+<img src="page 1_title.png">
+</div>
 </head>
 <body>
-<div class="w3-padding w3-display-middle w3-xxlarge">
-  <button class="button" onclick="clicked()">Play</button>
+<div class="bg">
+<img src="page 1_background.png">
+
+<div class="w3-padding w3-display-middle w3-large">
+<p>
+<a href="welcome.html">
+<img src="page 1_start button.png"></a>
+</p>
 <br>
 </div>
-
+</div>
 </body>
 </html>
