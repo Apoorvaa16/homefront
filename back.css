@@ -7,6 +7,12 @@
   background: #555;
 }
 
+/* image style */
+img {
+    width: 100%;
+    height: auto;
+}
+
 .header h1 {
   position: relative;
   top: 18px;
@@ -27,15 +33,14 @@
     background-color: blue;
     color: white;
   
-  left: 50%;
-  top: 50%;
-  margin-top: -15px;   /* = -height / 2   */
-  margin-left: -100px; /* = -width / 2    */
-  position: fixed;     /* Fixed is better */
-    padding: 25px 25px;
-    text-align: center;
-    font-size: 12px;
-    cursor: pointer;
+  	
+  	
+  	position: fixed;     /* Fixed is better */
+    	padding: 25px 25px;
+    	text-align: center;
+    	font-size: 12px;
+    	cursor: pointer;
+}
    
 .p{
 display: table-cell;

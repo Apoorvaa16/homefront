@@ -5,19 +5,22 @@
   
 <link rel="stylesheet" href ="back.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <script src='media-player.js'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</meta>
+    <script src='media_player_full.js'></script>
 </head>
 <body> 
   <div class="w3-display-topmiddle">
 	<button id='play-pause-button' class='play' title='play'
-		onclick='togglePlayPause();'>Play</button>
+onclick='togglePlayPause();'>Play</button>
 	<button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button>
-	<button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>
+<button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>
+<br>
+<br>
 	<progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
 </div>
 <div id="my-div">
-<video id='media-video'>
+<video id="media-video"  width="600" height="600">
   <source src="half_hologram text with audio.mp4" type="video/mp4">
 </video>
 
