@@ -2,30 +2,22 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  </meta>
 
-  <script>
-
-  function clicked(){
-    window.location.href = "welcome.html";
-  }
-  </script>
-
-<div class="w3-display-topmiddle">
-<img src="page 1_title.png">
-</div>
-
-<body>
-<div class="bg">
-<img src="page 1_background.png">
-
-<div id="my-div">
+ 
+<h1>
+ <center>
+<img src="page 1_title.png" height="70" width="70">
+  </h1>
+  </center>
+  </head>
+<body background="page 1_background.png">
 <p>
+<center>
 <a href="welcome.html">
-<img src="page 1_start button.png"></a>
+<img src="page 1_start button.png" height="200" width="200"></a>
 </p>
-</div>
-</div>
-</head>
+</center>
+  </body>
 </html>
