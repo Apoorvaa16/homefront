@@ -8,7 +8,7 @@
  
 <h1>
  <center>
-<img src="page 1_title.png" height="70" width="70">
+<img src="page 1_title.png" height="40%" width="100%">
   </h1>
   </center>
   </head>
@@ -16,7 +16,7 @@
 <p>
 <center>
 <a href="welcome.html">
-<img src="page 1_start button.png" height="200" width="200"></a>
+<img src="page 1_start button.png" height="40%" width="100%"></a>
 </p>
 </center>
   </body>

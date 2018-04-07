@@ -1,54 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="UTF-8">
-   
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</meta>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="back.css">
-    </head>
-    <body>
- <div class="w3-padding w3-display-topmiddle">Scene1:Hercules</div>
-<br>
-<br>
-<br>
-<center>
-   <button id="playButton">Play</button>
-</center>
-<div id="my-div">
-        <video id="myVideo" width="500" height="500">
-            <source src="video_1.mp4">
-        </video>
-     
-        <script type="text/javascript">
-            var myVideo = document.getElementById('myVideo');
-            var playButton = document.getElementById('playButton')
-	myVideo.onended = function() {
-            window.open("next_act.html", "_self");
+<head>
+
+  <video class="video_player" id="player" width="100%" controls="controls" autoplay="autoplay">
+  <source src="video_1.mp4"/>
+  Your browser does not support the HTML5 video tag.  Use a better browser!
+</video>
+
+<script type="text/javascript">
+function goFullscreen(id) {
+  var element = document.getElementById(id);       
+  if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }  
+}
+player.onended = function() {
+            window.open("next_act2.html", "_self");
       };
 
-            playButton.addEventListener('click', function () {
-                if (myVideo.paused) {
-                    if (myVideo.requestFullscreen) {
-                        myVideo.requestFullscreen();
-                    }
-                    else if (myVideo.msRequestFullscreen) {
-                        myVideo.msRequestFullscreen();
-                    }
-                    else if (myVideo.mozRequestFullScreen) {
-                        myVideo.mozRequestFullScreen();
-                    }
-                    else if (myVideo.webkitRequestFullScreen) {
-                        myVideo.webkitRequestFullScreen();
-                    }
-                    myVideo.play();
-                }
-                else {
-                    myVideo.pause();
-                }
-            }, false);
-            </script>
-
-</div>
-    </body>
-</html>
+</script>

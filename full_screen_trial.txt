@@ -3,7 +3,7 @@
 <head>
 
   <video class="video_player" id="player" width="100%" controls="controls" autoplay="autoplay">
-  <source src="video_4.mp4"/>
+  <source src="video_1.mp4"/>
   Your browser does not support the HTML5 video tag.  Use a better browser!
 </video>
 
@@ -17,7 +17,7 @@ function goFullscreen(id) {
   }  
 }
 player.onended = function() {
-            window.open("next_act3.html", "_self");
+            window.open("next_act.html", "_self");
       };
 
 </script>

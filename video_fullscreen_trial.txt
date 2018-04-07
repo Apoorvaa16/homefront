@@ -15,7 +15,8 @@
             var myVideo = document.getElementById('myVideo');
             var playButton = document.getElementById('playButton');
 
-            playButton.addEventListener('click', function () {
+                 window.onload = function()
+	 {
                 if (myVideo.paused) {
                     if (myVideo.requestFullscreen) {
                         myVideo.requestFullscreen();

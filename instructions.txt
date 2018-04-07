@@ -3,7 +3,7 @@
 <head>
 <h1>
 <center>
-ACT 1
+SCENE 1
 </center>
 </h1>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@ ACT 1
 <body>
  <div class="w3-padding w3-display-middle">
 <p>
-<a href="video_page.html">
+<a href="full_screen_trial.html">
 <img src="play button.png"  style="width:100%"></a>
 </p>
 

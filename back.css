@@ -125,3 +125,8 @@ progress {
 	margin-right:5px;
 	background:#434343;
 }
+#myButton {
+ background: url("play button.png") no-repeat;
+ width: 62px;
+ height: 24px;
+ }
