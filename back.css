@@ -21,6 +21,11 @@ body {
     width:100%; 
 }   
 
+.square {
+    height: 75px;
+    width: 75px;
+}
+
 .bg {
     width: 100%;
     height: 100%;
@@ -48,11 +53,10 @@ body {
 #imageWrapper { position: relative; height: 500px; } 
 /* height is for display purposes only */
 
-#bottomImage 
-{ position: fixed; 
-bottom: 0;
- vertical-align: middle; }
-
+img {
+    width: 100%;
+    height: auto;
+}
 
 .button {
     background-color: blue;

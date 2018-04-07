@@ -6,25 +6,23 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </meta>
+<h1>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:20%">
+  
+<form action="instructions.html">
+Number of players:<br>
+ 
+<input id="number" type="number" style="width: 10em;" min="1 " max="6" required size="1">
+ </form> 
+</div>
+</h1>
 
-<script>
-  function clicked4(){
-    window.location.href = "instructions.html";
-  }
-  </script>
 </head>
 <body>
-<body>
-  
-<div id="my-div"> 
-<form action="instructions.html">
- Enter the number of players:<br>
- 
-<input id="number" type="number" style="width: 10em;" min="1" max="6" required>
- </form> 
 
-</div>
-  <div class="w3-display-bottommiddle">
+  
+<div id="my-div">  
 <p>
 <a href="instructions.html">
 <img src="next button.png" style="width:200px;height:200px;"></a>

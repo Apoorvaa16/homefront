@@ -18,10 +18,10 @@ ACT 1
 </meta>
 </head>
 <body>
- <div class="w3-padding w3-display-middle w3-large">
+ <div class="w3-padding w3-display-middle">
 <p>
 <a href="video_page.html">
-<img src="play button.png"></a>
+<img src="play button.png"  style="width:100%"></a>
 </p>
 
 
