@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="45; url=background_with_image.html">
+   
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </meta>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="back.css">
     </head>
     <body>
- <div class="w3-padding w3-display-topmiddle">Scene1:You speak like an innocent bystander</div>
+ <div class="w3-padding w3-display-topmiddle">Scene1:Hercules</div>
 <br>
 <br>
 <br>
@@ -16,16 +16,16 @@
    <button id="playButton">Play</button>
 </center>
 <div id="my-div">
-        <video id="myVideo" width="400" height="400">
-            <source src="half_hologram text with audio.mp4">
+        <video id="myVideo" width="500" height="500">
+            <source src="video_1.mp4">
         </video>
      
         <script type="text/javascript">
             var myVideo = document.getElementById('myVideo');
-            var playButton = document.getElementById('playButton');
-	   
-            
-	
+            var playButton = document.getElementById('playButton')
+	myVideo.onended = function() {
+            window.open("next_act.html", "_self");
+      };
 
             playButton.addEventListener('click', function () {
                 if (myVideo.paused) {
@@ -48,6 +48,7 @@
                 }
             }, false);
             </script>
+
 </div>
     </body>
 </html>

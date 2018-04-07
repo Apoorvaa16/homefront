@@ -53,10 +53,7 @@ body {
 #imageWrapper { position: relative; height: 500px; } 
 /* height is for display purposes only */
 
-img {
-    width: 100%;
-    height: auto;
-}
+
 
 .button {
     background-color: blue;

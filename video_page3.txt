@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</meta>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="back.css">
+    </head>
+    <body>
+ <div class="w3-padding w3-display-topmiddle">Scene3</div>
+<br>
+<br>
+<br>
+<center>
+   <button id="playButton">Play</button>
+</center>
+<div id="my-div">
+        <video id="myVideo" width="500" height="500">
+            <source src="video_3.mp4">
+        </video>
+     
+        <script type="text/javascript">
+            var myVideo = document.getElementById('myVideo');
+            var playButton = document.getElementById('playButton')
+	myVideo.onended = function() {
+            window.open("next_act3.html", "_self");
+      };
+
+            playButton.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    if (myVideo.requestFullscreen) {
+                        myVideo.requestFullscreen();
+                    }
+                    else if (myVideo.msRequestFullscreen) {
+                        myVideo.msRequestFullscreen();
+                    }
+                    else if (myVideo.mozRequestFullScreen) {
+                        myVideo.mozRequestFullScreen();
+                    }
+                    else if (myVideo.webkitRequestFullScreen) {
+                        myVideo.webkitRequestFullScreen();
+                    }
+                    myVideo.play();
+                }
+                else {
+                    myVideo.pause();
+                }
+            }, false);
+            </script>
+
+</div>
+    </body>
+</html>

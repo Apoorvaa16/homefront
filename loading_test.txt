@@ -4,28 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="main.css">
 
+  <script>
 
-<div class="w3-cell-row">
-  <div class="w3-cell" style="width:15%">
- <img src="page 1_title.png" style="width:100%">
-  </div>
+  function clicked(){
+    window.location.href = "welcome.html";
+  }
+  </script>
 
-</head>
+<div class="w3-display-topmiddle">
+<img src="page 1_title.png">
+</div>
 
 <body>
 <div class="bg">
 <img src="page 1_background.png">
+
 <div id="my-div">
-<div class="w3-cell-row">
-  <div class="w3-cell" style="width:20%">
 <p>
 <a href="welcome.html">
-<img src="page 1_start button.png" style="width:100%"></a>
+<img src="page 1_start button.png"></a>
 </p>
 </div>
 </div>
-</div>
-</body>
+</head>
 </html>
