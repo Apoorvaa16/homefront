@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="style.css">
 <h1>
 <center>
-SCENE 1
+SCENE 3
 <br>
 <br>
 
@@ -11,19 +11,24 @@ SCENE 1
     </head>
     <body>
 <div id="my-div">
- <button id="playButton" class="btn">
-<img src="play button.png">
-</button>
+ 
 
-        <video id="myVideo" width="600" height="600">
-            <source src="video_1.mp4" type="video/mp4">
+
+<input type="image" src="play button.png" id="playButton"  width="100" height="100">
+</div>
+        <video id="myVideo" width="0" height="00">
+            <source src="video_3.mp4" type="video/mp4">
         </video>
-       </div>
+
 
         <script type="text/javascript">
             var myVideo = document.getElementById('myVideo');
             var playButton = document.getElementById('playButton');
 
+
+myVideo.onended = function() {
+            window.open("scene4.html", "_self");
+      };
             playButton.addEventListener('click', function () {
                 if (myVideo.paused) {
                     if (myVideo.requestFullscreen) {

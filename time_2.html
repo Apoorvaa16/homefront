@@ -1,0 +1,20 @@
+<html>
+<center></center>
+<head>
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, user-scalable=no,
+    initial-scale=1, maximum-scale=1, minimum-scale=1'/>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div ="my-div">
+  <script type="text/javascript" src="pixel-glass.js"></script>
+  <script>
+    var glass = createPixelGlass();
+    document.body.appendChild(glass.getCanvas());
+    glass.start(1,function(){console.log("ok");});
+  </script>
+</div>
+ </body>
+ </center>
+</html>

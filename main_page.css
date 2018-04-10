@@ -1,4 +1,4 @@
-body { 
+html { 
    background-image: url("page 1_background.png");
     background-repeat: no-repeat;
 	
@@ -8,8 +8,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height:100%;
-    width:100%; 
+    max-height:100%;
+    max-width:100%; 
 }  
 
 

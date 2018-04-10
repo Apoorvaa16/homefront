@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="style.css">
 <h1>
 <center>
-SCENE 1
+SCENE 2
 <br>
 <br>
 
@@ -17,7 +17,7 @@ SCENE 1
 <input type="image" src="play button.png" id="playButton"  width="100" height="100">
 </div>
         <video id="myVideo" width="0" height="00">
-            <source src="video_1.mp4" type="video/mp4">
+            <source src="video_2.mp4" type="video/mp4">
         </video>
 
 
@@ -27,7 +27,7 @@ SCENE 1
 
 
 myVideo.onended = function() {
-            window.open("scene2.html", "_self");
+            window.open("scene3.html", "_self");
       };
             playButton.addEventListener('click', function () {
                 if (myVideo.paused) {
