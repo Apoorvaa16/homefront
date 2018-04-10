@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="back.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</meta>
-<h1>
-<div class="w3-cell-row">
-  <div class="w3-cell" style="width:20%">
-  
-<form action="instructions.html">
-Number of players:<br>
- 
-<input id="number" type="number" style="width: 10em;" min="1 " max="6" required size="1">
- </form> 
-</div>
-</h1>
-
+<meta name='viewport' content='width=device-width, user-scalable=no,
+    initial-scale=1, maximum-scale=1, minimum-scale=1'/>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-  <div class="bg">
-<img src="page 2 to 6_background.png">
-
-<div id="my-div">  
-<p>
-<a href="instructions.html">
-<img src="next button.png" style="width:200px;height:200px;"></a>
-</p>
-</div>
-</div>
-
-
+<div id="my-div">
+  
+<label for="number">Enter the number of players</label>
+<input id="number" type="number" style="width: 10em;" min="1 " max="6" required size="1">
+ 
+<br><br>
+<center>
+<a href="Scene1.html">
+<img src="next button.png">
+</a>
+</center>
 </body>
 </html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+  <link rel="stylesheet" href="style.css">
+<h1>
+<center>
+SCENE 1
+<br>
+<br>
+
+</center>
+    </head>
+    <body>
+<div id="my-div">
+ <button id="playButton" class="btn">
+<img src="play button.png">
+</button>
+
+        <video id="myVideo" width="600" height="600">
+            <source src="video_1.mp4" type="video/mp4">
+        </video>
+       </div>
+
+        <script type="text/javascript">
+            var myVideo = document.getElementById('myVideo');
+            var playButton = document.getElementById('playButton');
+
+            playButton.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    if (myVideo.requestFullscreen) {
+                        myVideo.requestFullscreen();
+                    }
+                    else if (myVideo.msRequestFullscreen) {
+                        myVideo.msRequestFullscreen();
+                    }
+                    else if (myVideo.mozRequestFullScreen) {
+                        myVideo.mozRequestFullScreen();
+                    }
+                    else if (myVideo.webkitRequestFullScreen) {
+                        myVideo.webkitRequestFullScreen();
+                    }
+                    myVideo.play();
+                }
+                else {
+                    myVideo.pause();
+                }
+            }, false);
+            </script>
+    </body>
+</html>
