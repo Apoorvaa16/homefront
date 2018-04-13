@@ -9,7 +9,7 @@ body {
   height: 99.5rem;
   margin: 0 auto;
   overflow: hidden;
-  position: absolute;
+  position: relative;
 background-repeat:no-repeat;
 }
 
