@@ -21,7 +21,7 @@ background-repeat:no-repeat;
 
 @keyframes topFadeOut {
   0% {
-    position: absolute;
+    position: fixed;
     top: -3rem;
     opacity: 0;
   }
