@@ -1,4 +1,8 @@
-html { 
+html, body { 
+	height:100%
+}
+body {
+
    background-image: url("page 1_background.png");
     background-repeat: no-repeat;
 	
