@@ -10,7 +10,7 @@ body {
 
   margin: 0 auto;
   overflow: hidden;
-  position: relative;
+  position: fixed;
 background-repeat:no-repeat;
 }
 
@@ -21,13 +21,13 @@ background-repeat:no-repeat;
 
 @keyframes topFadeOut {
   0% {
-    position: absolute;
+    position: fixed;
     top: -3rem;
     opacity: 0;
   }
 
   75% {
-    position: absolute;
+    position: fixed;
     top: 25%;
     opacity: 1;
   }
