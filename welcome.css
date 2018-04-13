@@ -2,6 +2,7 @@ body {
   font-size: 30.5%;
   font-style: Arial;
   background-image: url("page 2 to 6_background.png")
+     position: fixed;
 }
 
 .animation-box {
@@ -27,7 +28,7 @@ background-repeat:no-repeat;
   }
 
   75% {
-    position: absolute;
+    position: fixed;
     top: 10%;
     opacity: 1;
   }
