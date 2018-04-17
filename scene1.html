@@ -53,7 +53,7 @@ myVideo.onended = function() {
 						 screen.orientation.lock("landscape-primary");
                     }
                     else if (myVideo.mozRequestFullScreen) 
-					{
+					{   // mozilla firefox
                         myVideo.mozRequestFullScreen();
 						screen.orientation.lock("landscape-primary");
                     }
