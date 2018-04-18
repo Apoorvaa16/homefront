@@ -69,7 +69,9 @@ iPad 3
 svg {
 	position: absolute;
 	-webkit-transform: translate(102%, 350%);
-	transform: translate(102%, 350%);
+	transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 .group {
     -webkit-transform: translate(42.5px,42.5px);
