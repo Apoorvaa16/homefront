@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta name='viewport' content='width=device-width,
+    initial-scale=1'/>
+  <link rel="stylesheet" href="style.css">
+       
+<h1>
+     <br>
+<center>
+Learn how to play Kairos! 
+<br>
+<br>
+
+</center>
+
+    </head>
+    <body>
+<div id="my-div">
+        <video id="myVideo" width="00" height="00" viewBox="-30 100 30 100">
+            <source src="Scene_0.mp4" type="video/mp4">
+        </video>
+</div>
+	    <svg width="300" height="200">
+  <g class="group" opacity="0.8">
+    <g class="large">
+      <path id="large" d="M41.25,40 L42.5,10 L43.75,40 L45, 41.25 L75,42.5 L45,43.75
+    					  L43.75,45 L42.5,75 L41.25,45 L40,43.75 L10,42.5 L40,41.25z " fill="white" />
+    </g>
+    <g class="large-2" transform="rotate(45)">
+      <use xlink:href="#large" />
+    </g>
+    <g class="small">
+      <path id="small" d="M41.25,40 L42.5,25 L43.75,40 L45,41.25 L60,42.5 L45,43.75
+            		      L43.75,45 L42.5,60 L41.25,45 L40,43.75 L25,42.5 L40,41.25z" fill="white" />
+    </g>
+  </g>
+  
+</svg>
+<div id="my-div">
+ 
+
+
+<input type="image" src="play button.png" id="playButton"   width="100" height="100">
+</div>
+      
+
+
+        <script type="text/javascript">
+            var myVideo = document.getElementById('myVideo');
+            var playButton = document.getElementById('playButton');
+			
+		
+myVideo.onended = function() {
+            window.open("scene_1.html", "_self");
+      };
+            playButton.addEventListener('click', function () 
+			{
+          
+                    if (myVideo.requestFullscreen) 
+					{
+                        myVideo.requestFullscreen();
+						screen.orientation.lock("landscape-primary");
+					
+                    }
+                    else if (myVideo.msRequestFullscreen)
+					 {
+                        myVideo.msRequestFullscreen();
+						 screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo.mozRequestFullScreen) 
+					{   // mozilla firefox
+                        myVideo.mozRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo.webkitRequestFullScreen) 
+					{    // chrome
+                        myVideo.webkitRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+           
+         myVideo.play();
+		 
+              
+				
+            });
+            </script>
+    </body>
+</html>
