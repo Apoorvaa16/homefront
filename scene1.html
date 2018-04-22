@@ -55,12 +55,9 @@ myVideo.onended = function() {
             window.open("scene2.html", "_self");
       };
 		
-		// for ipads
 		
-		playButton.addEventListener('touchstart', function(event) {
- 			video.play();
-			}, false);
 		
+
 		
             playButton.addEventListener('click', function () 
 			{
@@ -86,6 +83,13 @@ myVideo.onended = function() {
                         myVideo.webkitRequestFullScreen();
 						screen.orientation.lock("landscape-primary");
                     }
+		    
+		     else if (myVideo.webkitEnterFullscreen) 
+					{    // ipads
+                        myVideo.webkitEnterFullscreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
            
          myVideo.play();
 		 
