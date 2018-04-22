@@ -54,6 +54,14 @@ SCENE 1
 myVideo.onended = function() {
             window.open("scene2.html", "_self");
       };
+		
+		// for ipads
+		
+		playButton.addEventListener('touchstart', function(event) {
+ 			video.play();
+			}, false);
+		
+		
             playButton.addEventListener('click', function () 
 			{
           
