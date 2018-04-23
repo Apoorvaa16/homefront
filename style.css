@@ -210,3 +210,25 @@ path {
 		transform: rotate(-360deg) scale(1.5);
 	}
 }
+
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ height:30px;
+   width:100%;
+  padding: 1rem;
+ 
+  text-align: center;
+}
+
+
+#grey {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+            filter: grayscale(100%); 
+}
