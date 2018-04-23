@@ -1,30 +1,162 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name='viewport' content='width=device-width,
-    initial-scale=1'/>
-<link rel="stylesheet" type="text/css" href="hint.css">
-    <script src="hint.js"></script>
-</head>
-<body>
-<div class="header">
-     <h1>City Gallery</h1>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<br>
+<br>
+<br>
+
+<center>
+ 
+<input type="image" src="replay.png" id="playButton"  width="150" height="150"/> &nbsp;
+
+
+<input type="image" src="hint.png"  onclick="option('Hint')"  width="150" height="150"/>&nbsp; &nbsp; &nbsp;
+
+<a href ="scene2.html">
+<input type="image" src="nextact button.png"    width="150" height="150"/>&nbsp;
+</a>
+  
+
+</center>
+
+<div id="my-div">
+
+<div id="Replay" class="w3-container option">
+  
 </div>
-<div class="nav">
-    <ul>
-        <li><a href="#section-london">London</a></li>
-        <li><a href="#section-paris">Paris</a></li>
-    </ul>
+
+
+<div id="Hint" class="w3-container option" style="display:none">
+  <h2>Hints</h2>
+  <p>Question1<br>
+        Question2<br>
+		Question3<br>
+		Question4<br>
+		Question5  </p> 
 </div>
-<div id="section-london" class="tab-content">
-    <h2>London</h2>
-    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+
+<div id="Next" class="w3-container option" style="display:none">
+ 
 </div>
-<div id="section-paris" class="tab-content">
-    <h2>Paris</h2>
-    <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its picturesque 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. </p>
+
 </div>
-<div class="footer">Footer</div>
+
+<div class="footer">
+<img src="01.png" id="grey" width="30" height="30">
+&nbsp;
+
+<img src="02.png" width="30" height="30">
+&nbsp;
+<img src="03.png" width="30" height="30">
+&nbsp;
+<img src="04.png"  width="30" height="30">
+&nbsp;
+<img src="05.png"  width="30" height="30">
+&nbsp;
+<img src="06.png"  width="30" height="30">
+&nbsp;
+<img src="07.png"  width="30" height="30">
+&nbsp;
+<img src="08.png"  width="30" height="30">
+&nbsp;
+<img src="09.png"  width="30" height="30">
+&nbsp;
+<img src="10.png"  width="30" height="30">
+&nbsp;
+<img src="11.png"  width="30" height="30">
+&nbsp;
+<img src="12.png" width="30" height="30">
+&nbsp;
+<img src="13.png" width="30" height="30">
+&nbsp;
+<img src="14.png"  width="30" height="30">
+&nbsp;
+<img src="15.png"  width="30" height="30">
+&nbsp;
+<img src="16.png" width="30" height="30">
+&nbsp;
+<img src="17.png" width="30" height="30">
+&nbsp;
+</div>
+
+ <video id="myVideo" width="00" height="00"></video>
+            <source src="Scene_1.mp4" type="video/mp4">
+        </video>
+</div>
+	 
+      
+
+
+        <script type="text/javascript">
+            var myVideo = document.getElementById('myVideo');
+            var playButton = document.getElementById('playButton');
+			
+		
+myVideo.onended = function() {
+            window.open("hint.html", "_self");
+      };
+		
+		window.addEventListener('load', 
+  function() { 
+  
+  }, false);
+		
+		
+            playButton.addEventListener('click', function () 
+			{
+          
+                    if (myVideo.requestFullscreen) 
+					{
+                        myVideo.requestFullscreen();
+						screen.orientation.lock("landscape-primary");
+					
+                    }
+                    else if (myVideo.msRequestFullscreen)
+					 {
+                        myVideo.msRequestFullscreen();
+						 screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo.mozRequestFullScreen) 
+					{   // mozilla firefox
+                        myVideo.mozRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo.webkitRequestFullScreen) 
+					{    // chrome
+                        myVideo.webkitRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+		     else if (myVideo.webkitEnterFullscreen) 
+					{    // ipads
+                        myVideo.webkitEnterFullscreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+           
+         myVideo.play();
+		 
+              
+				
+            });
+            </script>
+
+
+<script>
+function option(Name) {
+    var i;
+    var x = document.getElementsByClassName("option");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(Name).style.display = "block";  
+}
+</script>
+
 </body>
 </html>
+
+
