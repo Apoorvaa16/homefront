@@ -78,6 +78,12 @@ myVideo.onended = function() {
                         myVideo.webkitRequestFullScreen();
 						screen.orientation.lock("landscape-primary");
                     }
+		    
+		    else if (myVideo.webkitEnterFullscreen) 
+					{    // ipads
+                        myVideo.webkitEnterFullscreen();
+						screen.orientation.lock("landscape-primary");
+                    }
            
          myVideo.play();
 		 
