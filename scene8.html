@@ -17,7 +17,7 @@ SCENE 8
     </head>
     <body>
 <div id="my-div">
-        <video id="myVideo" width="00" height="00">
+        <video id="myVideo" width="00" height="00" autoplay>
             <source src="Scene_8.mp4" type="video/mp4">
         </video>
 </div>
@@ -76,6 +76,12 @@ myVideo.onended = function() {
                     else if (myVideo.webkitRequestFullScreen) 
 					{    // chrome
                         myVideo.webkitRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+		    else if (myVideo.webkitEnterFullscreen) 
+					{    // ipads
+                        myVideo.webkitEnterFullscreen();
 						screen.orientation.lock("landscape-primary");
                     }
            
