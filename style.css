@@ -54,11 +54,11 @@ img {
 
 p {
     font-family: "Lithos Pro";
-	
-   
-    font-weight: normal;
-    font-style: normal;
-	font-size: 20px;
+  src: url('fonts/Lithos Pro.eot?#') format('eot'),  /* IE6–8 */
+       url('fonts/Lithos Pro.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('fonts/Lithos Pro.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
