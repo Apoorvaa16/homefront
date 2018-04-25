@@ -44,13 +44,11 @@ img {
 
 p {
     font-family: "Lithos Pro";
-	 src: url('/fonts/myriadpro-boldcond-webfont.eot#') format('eot'),
-         url('/fonts/myriadpro-boldcond-webfont.woff') format('woff'),
-         url('/fonts/myriadpro-boldcond-webfont.ttf') format('truetype'),
-         url('/fonts/myriadpro-boldcond-webfont.svg#MyriadProBoldCondensed') format('svg');
+	
+   
     font-weight: normal;
     font-style: normal;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
