@@ -154,8 +154,8 @@ background-repeat:no-repeat;
 
 .fourth-text {
   font-size: 3.4rem;
-  position: absolute;
-  top: 10.5rem;
+  position: fixed;
+  top: 5.5rem;
   left: 10%;
   opacity: 0;
   color: #F0A3BE;
