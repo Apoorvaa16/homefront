@@ -1,3 +1,12 @@
+
+html, 
+body {
+    height:100%;
+	margin: 0 auto;
+  padding: 0;
+}
+
+
 body { 
    background-image: url("page 2 to 6_background.png");
     background-repeat: no-repeat;
