@@ -42,7 +42,10 @@ img {
   width: 50em;
 }
 
-
+p {
+    font-style: "Lithos Pro";
+	font-size: 15px;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
