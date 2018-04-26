@@ -62,7 +62,7 @@
 
 <img src="16.png" width="20" height="20">
 
-<img src="17.png" width="20" height="20">
+
 	
 		</center>
 	
@@ -86,35 +86,35 @@ myVideo.onended = function() {
 		
 	
 		
-            playButton.addEventListener('click', function () 
+               playButton.addEventListener('click', function () 
 			{
           
                     if (myVideo.requestFullscreen) 
 					{
                         myVideo.requestFullscreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
 					
                     }
                     else if (myVideo.msRequestFullscreen)
 					 {
                         myVideo.msRequestFullscreen();
-						 screen.orientation.lock("landscape-primary");
+						 screen.orientation.lock("landscape");
                     }
                     else if (myVideo.mozRequestFullScreen) 
 					{   // mozilla firefox
                         myVideo.mozRequestFullScreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
                     else if (myVideo.webkitRequestFullScreen) 
 					{    // chrome
                         myVideo.webkitRequestFullScreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
 		    
 		     else if (myVideo.webkitEnterFullscreen) 
 					{    // ipads
                         myVideo.webkitEnterFullscreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
 		    
            
