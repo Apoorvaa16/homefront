@@ -66,7 +66,7 @@
 		</center>
 	
 		
- <video id="myVideo" width="00" height="00"></video>
+ <video id="myVideo" width="00" height="00" autoplay>
             <source src="Scene_14.mp4" type="video/mp4">
         </video>
 
@@ -80,7 +80,7 @@
 			
 		
 myVideo.onended = function() {
-            window.open("hint.html", "_self");
+            window.open("next_15.html", "_self");
       };
 		
 	
@@ -91,29 +91,29 @@ myVideo.onended = function() {
                     if (myVideo.requestFullscreen) 
 					{
                         myVideo.requestFullscreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
 					
                     }
                     else if (myVideo.msRequestFullscreen)
 					 {
                         myVideo.msRequestFullscreen();
-						 screen.orientation.lock("landscape-primary");
+						 screen.orientation.lock("landscape");
                     }
                     else if (myVideo.mozRequestFullScreen) 
 					{   // mozilla firefox
                         myVideo.mozRequestFullScreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
                     else if (myVideo.webkitRequestFullScreen) 
 					{    // chrome
                         myVideo.webkitRequestFullScreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
 		    
 		     else if (myVideo.webkitEnterFullscreen) 
 					{    // ipads
                         myVideo.webkitEnterFullscreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
 		    
            
@@ -124,16 +124,6 @@ myVideo.onended = function() {
             });
             </script>
 
-<script>
-function option(Name) {
-    var i;
-    var x = document.getElementsByClassName("option");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    document.getElementById(Name).style.display = "block";  
-}
-</script>
 
 
 
