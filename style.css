@@ -1,4 +1,8 @@
 
+
+
+
+
 html, 
 body {
     height:100%;
@@ -53,9 +57,9 @@ img {
 }
 
 @font-face {
-    font-family: "Copperplate Gothic Light";
+    font-family: "Josefin Sans";
   
-   url("copperplate-gothic-light.ttf") format("truetype");
+   url("https://fonts.google.com/specimen/Josefin+Sans");
    font-weight: normal;
    font-style: normal;
 }
