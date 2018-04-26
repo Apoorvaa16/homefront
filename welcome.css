@@ -8,9 +8,10 @@ body {
 
 
 body {
-  font-size: 30.5%;
+  font-size: 27.5%;
   font-style: Arial;
   background-image: url("page 2 to 6_background.png");
+	height:100%;
 }
 
 .animation-box {
@@ -117,7 +118,8 @@ background-repeat:no-repeat;
 }
 
 .first-text {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
+	font-family: 'Josefin Sans', sans-serif;
   position: fixed;
   left: 1.5rem;
   top: 4.8rem;
@@ -154,11 +156,12 @@ background-repeat:no-repeat;
 
 .fourth-text {
   font-size: 3.4rem;
+	font-family: 'Josefin Sans', sans-serif;
   position: fixed;
   top: 5.5rem;
   left: 10%;
   opacity: 0;
-  color: #F0A3BE;
+  color: white;
   animation-name: fadeInOut;
   animation-delay: 8.5s;
   animation-duration: 9s;
