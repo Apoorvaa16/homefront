@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta name='viewport' content='width=device-width,
+    initial-scale=1'/>
+<link rel="stylesheet" href="style.css">
+<h1>
+	
+	<center>
+		<p>
+
+  Draw a card..
+	</p>
+		
+		<br>
+		<input type="image" src="replay button.png" id="playButton"  width="100" height="100"/> &nbsp;
+
+<a href ="scene13.html">
+<input type="image" src="nextact button.png" width="100" height="100"/>&nbsp;
+</a>
+	</center>
+	</h1>	
+	</head>
+	<body>
+ 
+
+		
+			
+<center>
+
+<img src="01.png" id="grey" width="20" height="20">
+
+
+<img src="02.png"  id="grey" width="20" height="20">
+
+<img src="03.png" id="grey" width="20" height="20">
+
+<img src="04.png" id="grey" width="20" height="20">
+
+<img src="05.png" id="grey" width="20" height="20">
+
+<img src="06.png" id="grey" width="20" height="20">
+
+<img src="07.png" id="grey" width="20" height="20">
+
+<img src="08.png" id="grey" width="20" height="20">
+
+<img src="09.png" id="grey" width="20" height="20">
+
+<img src="10.png"  id="grey" width="20" height="20">
+
+<img src="11.png" id="grey width="20" height="20">
+
+<img src="12.png" id="grey" width="20" height="20">
+
+<img src="13.png" width="20" height="20">
+
+<img src="14.png" width="20" height="20">
+
+<img src="15.png" width="20" height="20">
+
+<img src="16.png" width="20" height="20">
+
+<img src="17.png" width="20" height="20">
+	
+		</center>
+	
+		
+ <video id="myVideo" width="00" height="00"></video>
+            <source src="Scene_12.mp4" type="video/mp4">
+        </video>
+
+	 
+      
+
+
+        <script type="text/javascript">
+            var myVideo = document.getElementById('myVideo');
+            var playButton = document.getElementById('playButton');
+			
+		
+myVideo.onended = function() {
+            window.open("hint.html", "_self");
+      };
+		
+	
+		
+            playButton.addEventListener('click', function () 
+			{
+          
+                    if (myVideo.requestFullscreen) 
+					{
+                        myVideo.requestFullscreen();
+						screen.orientation.lock("landscape-primary");
+					
+                    }
+                    else if (myVideo.msRequestFullscreen)
+					 {
+                        myVideo.msRequestFullscreen();
+						 screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo.mozRequestFullScreen) 
+					{   // mozilla firefox
+                        myVideo.mozRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo.webkitRequestFullScreen) 
+					{    // chrome
+                        myVideo.webkitRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+		     else if (myVideo.webkitEnterFullscreen) 
+					{    // ipads
+                        myVideo.webkitEnterFullscreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+           
+         myVideo.play();
+		 
+              
+				
+            });
+            </script>
+
+<script>
+function option(Name) {
+    var i;
+    var x = document.getElementsByClassName("option");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(Name).style.display = "block";  
+}
+</script>
+
+
+
+</body>
+</html>
