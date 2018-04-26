@@ -54,9 +54,11 @@ SCENE 2
 myVideo.onended = function() {
             window.open("next_2.html", "_self");
       };
-            playButton.addEventListener('click', function () 
+          playButton.addEventListener('click', function () 
 			{
-        
+          
+                    if (myVideo.requestFullscreen) 
+					{
                         myVideo.requestFullscreen();
 						screen.orientation.lock("landscape");
 					
@@ -85,11 +87,11 @@ myVideo.onended = function() {
 		    else if (myVideo.webkitEnterFullscreen) 
 					{    // ipads
                         myVideo.webkitEnterFullscreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
+		    
            
          myVideo.play();
-		 
               
 				
             });
