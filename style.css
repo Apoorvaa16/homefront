@@ -57,8 +57,7 @@ p {
    src: url("fonts/lithospro.eot");
    src: url("fonts/lithospro.eot?#iefix") format("embedded-opentype"),
    url("fonts/lithospro.woff") format("woff"),
-   url("fonts/lithospro.ttf") format("truetype"),
-   url("fonts/lithospro.svg#OctinSports") format("svg");
+   url("fonts/lithospro.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
 }
