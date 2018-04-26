@@ -52,7 +52,7 @@ SCENE 11
 			
 		
 myVideo.onended = function() {
-            window.open("scene12.html", "_self");
+            window.open("next_11.html", "_self");
       };
             playButton.addEventListener('click', function () 
 			{
@@ -60,29 +60,29 @@ myVideo.onended = function() {
                     if (myVideo.requestFullscreen) 
 					{
                         myVideo.requestFullscreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
 					
                     }
                     else if (myVideo.msRequestFullscreen)
 					 {
                         myVideo.msRequestFullscreen();
-						 screen.orientation.lock("landscape-primary");
+						 screen.orientation.lock("landscape");
                     }
                     else if (myVideo.mozRequestFullScreen) 
 					{   // mozilla firefox
                         myVideo.mozRequestFullScreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
                     else if (myVideo.webkitRequestFullScreen) 
 					{    // chrome
                         myVideo.webkitRequestFullScreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
 		    
 		    else if (myVideo.webkitEnterFullscreen) 
 					{    // ipads
                         myVideo.webkitEnterFullscreen();
-						screen.orientation.lock("landscape-primary");
+						screen.orientation.lock("landscape");
                     }
            
          myVideo.play();
