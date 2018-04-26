@@ -60,6 +60,11 @@ img {
    font-style: normal;
 }
 
+P {
+	 font-family: "Copperplate Gothic Light";
+	font-weight: normal;
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
