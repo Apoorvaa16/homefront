@@ -1,5 +1,5 @@
 
-
+@import url(https://fonts.google.com/specimen/Josefin+Sans);
 
 
 
@@ -56,16 +56,9 @@ img {
   width: 50em;
 }
 
-@font-face {
-    font-family: "Josefin Sans";
-  
-   url("https://fonts.google.com/specimen/Josefin+Sans");
-   font-weight: normal;
-   font-style: normal;
-}
 
 P {
-	  font-family: "Josefin Sans";
+	font-family: "Josefin Sans";
 	font-weight: normal;
 }
 
