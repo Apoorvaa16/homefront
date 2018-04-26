@@ -16,9 +16,9 @@
 		<br>
 		<input type="image" src="replay button.png" id="playButton"  width="100" height="100"/> &nbsp;
 
-<a href ="scene2.html">
-<input type="image" src="nextact button.png" width="100" height="100"/>&nbsp;
-</a>
+
+<input type="image" src="nextact button.png" id="playButton1" width="100" height="100"/>&nbsp;
+
 	</center>
 	</h1>	
 	</head>
@@ -129,16 +129,60 @@ myVideo.onended = function() {
             });
             </script>
 
-<script>
-function option(Name) {
-    var i;
-    var x = document.getElementsByClassName("option");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    document.getElementById(Name).style.display = "block";  
-}
-</script>
+  <script type="text/javascript">
+            var myVideo = document.getElementById('myVideo');
+            var playButton1 = document.getElementById('playButton1');
+			
+		
+myVideo.onended = function() {
+            window.open("hint.html", "_self");
+      };
+		
+		window.addEventListener('load', 
+  function() { 
+  
+  }, false);
+		
+		
+            playButton1.addEventListener('click', function () 
+			{
+          
+                    if (myVideo.requestFullscreen) 
+					{
+                        myVideo.requestFullscreen();
+						screen.orientation.lock("landscape-primary");
+					
+                    }
+                    else if (myVideo.msRequestFullscreen)
+					 {
+                        myVideo.msRequestFullscreen();
+						 screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo.mozRequestFullScreen) 
+					{   // mozilla firefox
+                        myVideo.mozRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo.webkitRequestFullScreen) 
+					{    // chrome
+                        myVideo.webkitRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+		     else if (myVideo.webkitEnterFullscreen) 
+					{    // ipads
+                        myVideo.webkitEnterFullscreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+           
+         myVideo.play();
+		 
+              
+				
+            });
+            </script>
+
 
 
 
