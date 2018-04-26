@@ -54,9 +54,9 @@ img {
 
 p {
     font-family: "lithos pro";
-   src: url(fonts/lithos pro.eot),
-   url(fonts/lithos pro.woff) format("woff"),
-   url(fonts/lithos pro.ttf) format("truetype");
+   src: url("fonts/lithos pro.eot"),
+   url("fonts/lithos pro.woff") format("woff"),
+   url("fonts/lithos pro.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
 }
