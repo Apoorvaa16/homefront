@@ -67,7 +67,7 @@
 		</center>
 	
 		
- <video id="myVideo" width="00" height="00"></video>
+ <video id="myVideo" width="00" height="00" autoplay>
             <source src="Scene_5.mp4" type="video/mp4">
         </video>
 
@@ -81,13 +81,9 @@
 			
 		
 myVideo.onended = function() {
-            window.open("hint.html", "_self");
+            window.open("next_5.html", "_self");
       };
 		
-		window.addEventListener('load', 
-  function() { 
-  
-  }, false);
 		
 		
             playButton.addEventListener('click', function () 
@@ -128,17 +124,6 @@ myVideo.onended = function() {
 				
             });
             </script>
-
-<script>
-function option(Name) {
-    var i;
-    var x = document.getElementsByClassName("option");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    document.getElementById(Name).style.display = "block";  
-}
-</script>
 
 
 
