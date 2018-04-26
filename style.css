@@ -52,7 +52,7 @@ img {
   width: 50em;
 }
 
-p {
+@font-face {
     font-family: "lithos pro";
    src: url("fonts/lithos pro.eot"),
    url("fonts/lithos pro.woff") format("woff"),
