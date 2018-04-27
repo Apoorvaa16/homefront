@@ -78,9 +78,9 @@ text-align:justify;
 	
 }
 
-.link
-{ text-decoration:none; color:#000; }
-
+a:link {
+    background-color: grey;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
