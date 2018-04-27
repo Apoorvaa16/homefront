@@ -78,8 +78,9 @@ text-align:justify;
 	
 }
 
-a:link {
-    background-color: none;
+a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
