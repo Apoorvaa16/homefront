@@ -71,6 +71,7 @@ img {
 div.a {
     line-height: 0.5cm;
 	font-size: 1.10em;
+	 word-spacing: normal;
 }
 
 
@@ -82,9 +83,10 @@ p {
   margin-right:2em;
 font-family: 'Josefin Sans', sans-serif;
 font-weight: normal;
- font-size: 1.10em;
+ font-size: 1.27em;
 text-align:justify;
 	text-decoration: underline;
+	
 	
 }
 
