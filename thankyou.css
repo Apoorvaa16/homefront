@@ -1,3 +1,20 @@
-html,body {
-             height:100%;
-             }
+html, 
+body {
+    height:100%;
+	margin: 0 auto;
+  padding: 0;
+}
+body {
+
+   background-image: url("last page_background.png");
+    background-repeat: no-repeat;
+	
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ 
+    max-width:100%; 
+}  
