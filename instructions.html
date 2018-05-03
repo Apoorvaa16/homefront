@@ -56,50 +56,50 @@
 
 
         <script type="text/javascript">
-            var myVideo1 = document.getElementById('myVideo1');
-            var playButton1 = document.getElementById('playButton1');
+            var myVideo = document.getElementById('myVideo');
+            var playButton = document.getElementById('playButton');
 			
 		
-myVideo1.onended = function() {
+myVideo.onended = function() {
             window.open("instructions.html", "_self");
       };
 		
 	
 		
 		
-            playButton1.addEventListener('click', function () 
+            playButton.addEventListener('click', function () 
 			{
           
-                    if (myVideo1.requestFullscreen) 
+                    if (myVideo.requestFullscreen) 
 					{
-                        myVideo1.requestFullscreen();
+                        myVideo.requestFullscreen();
 						screen.orientation.lock("landscape-primary");
 					
                     }
-                    else if (myVideo1.msRequestFullscreen)
+                    else if (myVideo.msRequestFullscreen)
 					 {
-                        myVideo1.msRequestFullscreen();
+                        myVideo.msRequestFullscreen();
 						 screen.orientation.lock("landscape-primary");
                     }
-                    else if (myVideo1.mozRequestFullScreen) 
+                    else if (myVideo.mozRequestFullScreen) 
 					{   // mozilla firefox
-                        myVideo1.mozRequestFullScreen();
+                        myVideo.mozRequestFullScreen();
 						screen.orientation.lock("landscape-primary");
                     }
-                    else if (myVideo1.webkitRequestFullScreen) 
+                    else if (myVideo.webkitRequestFullScreen) 
 					{    // chrome
-                        myVideo1.webkitRequestFullScreen();
+                        myVideo.webkitRequestFullScreen();
 						screen.orientation.lock("landscape-primary");
                     }
 		    
-		     else if (myVideo1.webkitEnterFullscreen) 
+		     else if (myVideo.webkitEnterFullscreen) 
 					{    // ipads
-                        myVideo1.webkitEnterFullscreen();
+                        myVideo.webkitEnterFullscreen();
 						screen.orientation.lock("landscape-primary");
                     }
 		    
            
-         myVideo1.play();
+         myVideo.play();
 		 
               
 				
