@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta name='viewport' content='width=device-width,
+    initial-scale=1'/>
+<link rel="stylesheet" href="style.css">
+
+		<h1>
+		<br>
+		<input type="image" src="replay button.png" id="playButton1"  width="100" height="100"/> &nbsp;
+
+
+<input type="image" src="replay button.png" id="playButton2"  width="100" height="100"/> &nbsp;
+
+	</center>
+	</h1>	
+	</head>
+	<body>
+ <center>
+<br>
+		<input type="image" src="replay button.png" id="playButton3"  width="100" height="100"/> &nbsp;
+
+
+<input type="image" src="replay button.png" id="playButton4"  width="100" height="100"/> &nbsp;
+
+		
+	
+	
+		</center>
+	
+		
+ <video id="myVideo1" width="00" height="00"></video>
+            <source src="Scene_1.mp4" type="video/mp4">
+        </video>
+
+	<video id="myVideo2" width="00" height="00"></video>
+            <source src="Scene_1.mp4" type="video/mp4">
+        </video>
+<video id="myVideo3" width="00" height="00"></video>
+            <source src="Scene_1.mp4" type="video/mp4">
+        </video>
+      
+
+
+        <script type="text/javascript">
+            var myVideo1 = document.getElementById('myVideo1');
+            var playButton1 = document.getElementById('playButton1');
+			
+		
+myVideo1.onended = function() {
+            window.open("instructions.html", "_self");
+      };
+		
+	
+		
+		
+            playButton1.addEventListener('click', function () 
+			{
+          
+                    if (myVideo1.requestFullscreen) 
+					{
+                        myVideo1.requestFullscreen();
+						screen.orientation.lock("landscape-primary");
+					
+                    }
+                    else if (myVideo1.msRequestFullscreen)
+					 {
+                        myVideo1.msRequestFullscreen();
+						 screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo1.mozRequestFullScreen) 
+					{   // mozilla firefox
+                        myVideo1.mozRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo1.webkitRequestFullScreen) 
+					{    // chrome
+                        myVideo1.webkitRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+		     else if (myVideo1.webkitEnterFullscreen) 
+					{    // ipads
+                        myVideo1.webkitEnterFullscreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+           
+         myVideo1.play();
+		 
+              
+				
+            });
+            </script>
+
+  <script type="text/javascript">
+            var myVideo2 = document.getElementById('myVideo2');
+            var playButton2 = document.getElementById('playButton2');
+			
+		
+myVideo2.onended = function() {
+            window.open("instructions.html", "_self");
+      };
+		
+		
+		
+		
+            playButton2.addEventListener('click', function () 
+			{
+          
+                    if (myVideo2.requestFullscreen) 
+					{
+                        myVideo2.requestFullscreen();
+						screen.orientation.lock("landscape-primary");
+					
+                    }
+                    else if (myVideo2.msRequestFullscreen)
+					 {
+                        myVideo2.msRequestFullscreen();
+						 screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo2.mozRequestFullScreen) 
+					{   // mozilla firefox
+                        myVideo2.mozRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo2.webkitRequestFullScreen) 
+					{    // chrome
+                        myVideo2.webkitRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+		     else if (myVideo2.webkitEnterFullscreen) 
+					{    // ipads
+                        myVideo2.webkitEnterFullscreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+           
+         myVideo2.play();
+		 
+              
+				
+            });
+            </script>
+
+
+ <script type="text/javascript">
+            var myVideo3 = document.getElementById('myVideo3');
+            var playButton3 = document.getElementById('playButton3');
+			
+		
+myVideo2.onended = function() {
+            window.open("instructions.html", "_self");
+      };
+		
+		
+		
+		
+            playButton3.addEventListener('click', function () 
+			{
+          
+                    if (myVideo3.requestFullscreen) 
+					{
+                        myVideo3.requestFullscreen();
+						screen.orientation.lock("landscape-primary");
+					
+                    }
+                    else if (myVideo3.msRequestFullscreen)
+					 {
+                        myVideo3.msRequestFullscreen();
+						 screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo3.mozRequestFullScreen) 
+					{   // mozilla firefox
+                        myVideo3.mozRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+                    else if (myVideo3.webkitRequestFullScreen) 
+					{    // chrome
+                        myVideo3.webkitRequestFullScreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+		     else if (myVideo3.webkitEnterFullscreen) 
+					{    // ipads
+                        myVideo3.webkitEnterFullscreen();
+						screen.orientation.lock("landscape-primary");
+                    }
+		    
+           
+         myVideo3.play();
+		 
+              
+				
+            });
+            </script>
+
+
+
+</body>
+</html>
+
+
