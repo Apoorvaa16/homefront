@@ -8,6 +8,7 @@ h1 {
 	
 	font-family: 'Josefin Sans', sans-serif;
 	text-align:center;
+	 text-align: justify;
 	 font-size: 1.17em;
 }
 
@@ -15,6 +16,7 @@ h2 {
     display: block;
     font-size: 1.17em;
     font-style: italic;
+	 text-align: justify;
    text-align:center;
 	<br>
 }
